@@ -2,10 +2,10 @@
 
 jQuery(function(_0x5779x1) {
     'use strict';
-    _0x5779x1('form#wrapped')['attr']('action', '../save_data.php');
+//     _0x5779x1('form#wrapped')['attr']('action', 'save_data.php');
     _0x5779x1('#wizard_container')['wizard']({
-        stepsWrapper: '#wrapped',
-        submit: '.submit',
+//         stepsWrapper: '#wrapped',
+//         submit: '.submit',
         beforeSelect: function(_0x5779x4, _0x5779x5) {
             if (_0x5779x1('input#website')['val']()['length'] != 0) {
                 return false
