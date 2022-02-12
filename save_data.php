@@ -14,6 +14,6 @@
     
     $data_form = "INSERT INTO userdata(atendimentoCaixa, recomendaService, howMeet, firstName, lastName, 	email, 	phone, age, gender, dataEnvio) VALUES ('$atendimentoCaixa', '$recomendaService', '$howMeet', '$name', '$lastName', '$email', '$phone', '$age', '$gender', NOW())";
 
-    $result_data_form = mysql_query($conn, $data_form);
+    $result_data_form = mysqli_query($conn, $data_form);
 
 ?>
