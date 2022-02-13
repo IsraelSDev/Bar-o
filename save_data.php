@@ -10,7 +10,7 @@
 
     $atendimentoCaixa = $_POST['question_1'];
     $recomendaService = $_POST['question_2'];
-    $howMeet = implode("|", $_POST['question_3']);
+    $howMeet = implode("|",$_POST['question_3']);
     $name = $_POST['firstname'];
     $lastName = $_POST['lastname'];
     $email = $_POST['email'];
