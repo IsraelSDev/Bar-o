@@ -16,6 +16,7 @@
 		href="img/apple-touch-icon-114x114-precomposed.png">
 	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144"
 		href="img/apple-touch-icon-144x144-precomposed.png">
+	<script src="https://kit.fontawesome.com/2b4be08fc4.js" crossorigin="anonymous"></script>
 
 	<!-- GOOGLE WEB FONT -->
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Poppins:300,400,500,600,700&display=swap"
@@ -50,14 +51,17 @@
 				<div class="col-7">
 					<div id="social">
 						<ul>
-							<li><a href="https://web.facebook.com/superbarao/" target="_blank"><i
-										class="social_facebook fa fa-facebook"> FACEBOOK </i></a></li>
-							<li><a href="mailto:contato@superbarao.com.br" target="_blank"><i class="social_twitter">
-										EMAIL </i></a></li>
-							<li><a href="https://www.instagram.com/superbarao" target="_blank"><i
-										class="social_instagram">INSTAGRAM </i></a></li>
-							<li><a href="https://superbarao.com.br/" target="_blank"><i class="social_linkedin"> WEBSITE
-									</i></a></li>
+							<li><a href="https://web.facebook.com/superbarao/" target="_blank"><img width="40"
+										height="40" src="img/facebook.png" /></a></li>
+
+							<li><a href="mailto:contato@superbarao.com.br" target="_blank"><img width="40" height="40"
+										src="img/o-email.png" /></a></li>
+
+							<li><a href="https://www.instagram.com/superbarao" target="_blank"><img width="40"
+										height="40" src="img/instagram.png" /></a></li>
+
+							<li><a href="https://superbarao.com.br/" target="_blank"><img width="40" height="40"
+										src="img/internet.png" /></a></li>
 						</ul>
 					</div>
 				</div>
@@ -214,8 +218,8 @@
 												<li>
 													<div class="checkbox_radio_container">
 														<input type="checkbox" id="question_3_opt_1" name="question_3[]"
-															class="required" value="Google e Sites de
-															Pesquisa" onchange="getVals(this, 'question_3');">
+															class="required" value="Google e Sites de Pesquisa"
+															onchange="getVals(this, 'question_3');">
 														<label class="checkbox" for="question_3_opt_1"></label>
 														<label for="question_3_opt_1" class="wrapper">Google e Sites de
 															Pesquisa</label>
@@ -224,8 +228,8 @@
 												<li>
 													<div class="checkbox_radio_container">
 														<input type="checkbox" id="question_3_opt_2" name="question_3[]"
-															class="required" value="Emails ou
-															Noticiários" onchange="getVals(this, 'question_3');">
+															class="required" value="Emails ou Noticiários"
+															onchange="getVals(this, 'question_3');">
 														<label class="checkbox" for="question_3_opt_2"></label>
 														<label for="question_3_opt_2" class="wrapper">Emails ou
 															Noticiários</label>
@@ -234,8 +238,8 @@
 												<li>
 													<div class="checkbox_radio_container">
 														<input type="checkbox" id="question_3_opt_3" name="question_3[]"
-															class="required" value="Amigos ou outras
-															pessoas" onchange="getVals(this, 'question_3');">
+															class="required" value="Amigos ou outras pessoas"
+															onchange="getVals(this, 'question_3');">
 														<label class="checkbox" for="question_3_opt_3"></label>
 														<label for="question_3_opt_3" class="wrapper">Amigos ou outras
 															pessoas</label>
@@ -244,8 +248,8 @@
 												<li>
 													<div class="checkbox_radio_container">
 														<input type="checkbox" id="question_3_opt_4" name="question_3[]"
-															class="required" value="Jornais
-															impressos" onchange="getVals(this, 'question_3');">
+															class="required" value="Jornais impressos"
+															onchange="getVals(this, 'question_3');">
 														<label class="checkbox" for="question_3_opt_4"></label>
 														<label for="question_3_opt_4" class="wrapper">Jornais
 															impressos</label>
@@ -312,13 +316,14 @@
 										</div>
 										<div class="form-group">
 											<label for="telephone">Telefone</label>
-											<input type="text" name="telephone" id="telephone" class="form-control">
+											<input type="tel" name="telephone" id="telephone" class="form-control"
+												pattern="\(\d{2}\)\d{4}-\d{4}">
 										</div>
 										<div class="row">
 											<div class="col-lg-3 col-md-3 col-3">
 												<div class="form-group">
 													<label for="age">Idade</label>
-													<input type="text" name="age" id="age" class="form-control">
+													<input type="number" name="age" id="age" class="form-control">
 												</div>
 											</div>
 											<div class="col-9">
@@ -408,7 +413,33 @@
 						sensibus.</p>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn_1" data-dismiss="modal">Close</button>
+					<!-- <button id="btn-close-modal" type="button" class="btn_1 btn-close" data-dismiss="modal"
+						aria-label="Close"></button> -->
+
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="border: none;
+					color: #fff;
+					background: #1000ff;
+					width: inherit !important;
+					outline: none;
+					cursor: pointer;
+					display: inline-block;
+					text-decoration: none;
+					padding: 12px 25px;
+					color: #fff;
+					font-weight: 600;
+					text-align: center;
+					line-height: 1;
+					-moz-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+					-webkit-transition: all 0.3s ease-in-out;
+					-ms-transition: all 0.3s ease-in-out;
+					transition: all 0.3s ease-in-out;
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					-ms-border-radius: 3px;
+					border-radius: 3px;
+					font-size: 14px;
+					font-size: 0.875rem;">Close</button>
 				</div>
 			</div>
 			<!-- /.modal-content -->
@@ -421,10 +452,14 @@
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/common_scripts.min.js"></script>
 	<script src="js/functions.js"></script>
-
+	<script src="https://kit.fontawesome.com/2b4be08fc4.js" crossorigin="anonymous"></script>
 	<!-- Wizard script -->
 	<script src="js/survey.js"></script>
-
+	<script>
+		$('#btn-close-modal').on('click', () => {
+			$("#terms-txt").removeClass("show");
+		})
+	</script>
 </body>
 
 </html>
