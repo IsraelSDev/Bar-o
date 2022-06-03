@@ -281,37 +281,34 @@
 									<!-- /step 3-->
 
 									<div class="submit step">
-										<h3 class="main_question"><strong>4 de 4</strong>Resumo</h3>
+										<h3 class="main_question"><strong>4 de 4</strong>Você encontrou todos os produtos que procurava?</h3>
 										<div class="summary">
 											<ul>
-												<li>
-													<strong>1</strong>
-													<h5>Como foi o atendimento no caixa?</h5>
-													<p id="question_1" class="mb-2"></p>
-													<p id="additional_message"></p>
+                        <li>
+													<div class="checkbox_radio_container">
+														<input type="radio" id="probably" name="question_2"
+															class="required" value="Sim"
+															onchange="getVals(this, 'question_2');">
+														<label class="radio" for="probably"></label>
+														<label for="probably" class="wrapper">Sim</label>
+													</div>
 												</li>
 												<li>
-													<strong>2</strong>
-													<h5>Você recomendaria nossos
-														serviços?</h5>
-													<p id="question_2" class="mb-2"></p>
-													<p id="additional_message_2"></p>
+													<div class="checkbox_radio_container">
+														<input type="radio" id="no" name="question_2" class="required"
+															value="Não" onchange="getVals(this, 'question_2');">
+														<label class="radio" for="no"></label>
+														<label for="no" class="wrapper">Não</label>
+													</div>
 												</li>
-												<li>
-													<strong>3</strong>
-													<h5>Como você nos conheceu?</h5>
-													<p id="question_3"></p>
-												</li>
+											
 											</ul>
-										</div>
-                    <div class="form-group terms">
-											<label class="container_check">Por favor, aceite nossos <a href="#"
-													data-bs-toggle="modal" data-bs-target="#terms-txt"
-													style="color:#fff; text-decoration: underline;">Termos e
-													condições</a>
-												<input type="checkbox" name="terms" value="Yes" class="required">
-												<span class="checkmark"></span>
-											</label>
+                      <div class="form-group">
+                        <label for="additional_message_2_label">Não? Quais: </label>
+                        <textarea name="additional_message_2" id="additional_message_2_label"
+                          class="form-control" style="height:120px;"
+                          onkeyup="getVals(this, 'additional_message_2');"></textarea>
+                      </div>
 										</div>
 									</div>
 

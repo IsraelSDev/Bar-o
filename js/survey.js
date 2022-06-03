@@ -68,7 +68,10 @@ function getVals(key, filter) {
       break;
     case "additional_message_3":
       value = $(key).val();
-      $("#additional_message_3").text(value);
+    case "question_4":
+      value = $(key).val();
+      $("#question_4").text(value);
+      $("#additional_message_4").text(value);
       break;
   }
 }

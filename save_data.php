@@ -10,13 +10,15 @@
 
     $atendimentoCaixa = $_POST['question_1'];
     $esperaFila = $_POST['question_2'];
-    $recomendaService = $_POST['question_2'];
-    $howMeet = implode("|",$_POST['question_3']);
+    $recebiInfoSobre = implode(" | ",$_POST['question_3']);
+    $itensNaoEncontrados = $_POST['question_4'];
+    $itensNaoEncontradosMenssagem = $_POST['additional_message_1'];
+
       
-    $data_form = "INSERT INTO userdata(atendimentoCaixa, recomendaServico, sujestaoRecomendaServico, comoConheceu,  dataEnvio) VALUES ('$atendimentoCaixa',  '$recomendaService', '$esperaFila', '$howMeet',  NOW())";
+    $data_form = "INSERT INTO userdata(atendimentoCaixa, esperaFila, recebiInfoSobre, itensNaoEncontrados, itensNaoEncontradosMenssagem, dataEnvio) VALUES ('$atendimentoCaixa',  '$esperaFila', '$recebiInfoSobre', '$itensNaoEncontrados',  '$itensNaoEncontradosMenssagem', NOW())";
 
    mysqli_query($conn, $data_form);
    
-   echo  "<script>alert('Email enviado com Sucesso!'); location.href=\"index.html\";</script>";
+   echo  "<script>alert('Email enviado com Sucesso!'); setTimeout(function () {location.href=\"index.html\"}, 2000);</script>";
 
 ?>

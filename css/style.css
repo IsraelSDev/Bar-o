@@ -581,7 +581,6 @@ button[disabled] {
   padding: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   position: relative;
-  padding-left: 45px;
   margin-bottom: 25px;
 }
 .summary ul li:last-child {
