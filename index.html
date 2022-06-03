@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Página de pesquisa da rede barão.">
-	<meta name="author" content="ISStudio / Barão Supermercado e Atacarejo">
+	<meta name="author" content="ISStudio - Soluções em T.I / Isstudio.com.br">
 	<title>Satisfação | Super Barão Supermercado e Atacarejo</title>
 
 	<!-- Favicons-->
@@ -99,7 +99,7 @@
 								<div id="middle-wizard">
 
 									<div class="step">
-										<h3 class="main_question"><strong>1 de 5</strong>Como foi o atendimento no
+										<h3 class="main_question"><strong>1 de 4</strong>Como foi o atendimento no
 											caixa?
 										</h3>
 										<div class="review_block_smiles">
@@ -159,109 +159,119 @@
 												</div>
 											</div>
 										</div>
-										<div class="form-group">
-											<label for="additional_message_label">Sugestões:</label>
-											<textarea name="additional_message" id="additional_message_label"
-												class="form-control" style="height:180px;"
-												onkeyup="getVals(this, 'additional_message');"></textarea>
-										</div>
 									</div>
 									<!-- /step 1-->
 
-									<div class="step">
-										<h3 class="main_question mb-4"><strong>2 de 5</strong>Você recomendaria nossos
-											serviços?</h3>
-										<div class="review_block">
-											<ul>
+                  <div class="step">
+										<h3 class="main_question"><strong>2 de 4</strong>A espera na fila foi?
+										</h3>
+										<div class="review_block_smiles">
+											<ul class="clearfix">
 												<li>
-													<div class="checkbox_radio_container">
-														<input type="radio" id="no" name="question_2" class="required"
-															value="Não" onchange="getVals(this, 'question_2');">
-														<label class="radio" for="no"></label>
-														<label for="no" class="wrapper">Não</label>
+													<div class="container_smile_2">
+														<input type="radio" id="very_bad_2" name="question_2"
+															class="required" value="Muito
+															Ruim" onchange="getVals(this, 'question_2');">
+														<label class="radio smile_1" for="very_bad_2"><span>Muito
+																Ruim</span></label>
 													</div>
 												</li>
 												<li>
-													<div class="checkbox_radio_container">
-														<input type="radio" id="maybe" name="question_2"
-															class="required" value="Talvez"
+													<div class="container_smile_2">
+														<input type="radio" id="bad_2" name="question_2"
+															class="required" value="Ruim"
 															onchange="getVals(this, 'question_2');">
-														<label class="radio" for="maybe"></label>
-														<label for="maybe" class="wrapper">Talvez</label>
+														<label class="radio smile_2"
+															for="bad_2"><span>Ruim</span></label>
 													</div>
 												</li>
 												<li>
-													<div class="checkbox_radio_container">
-														<input type="radio" id="probably" name="question_2"
-															class="required" value="Sim"
+													<div class="container_smile_2">
+														<input type="radio" id="average_2" name="question_2"
+															class="required" value="Satisfatório"
 															onchange="getVals(this, 'question_2');">
-														<label class="radio" for="probably"></label>
-														<label for="probably" class="wrapper">Sim</label>
+														<label class="radio smile_3"
+															for="average_2"><span>Satisfatório</span></label>
+													</div>
+												</li>
+												<li>
+													<div class="container_smile_2">
+														<input type="radio" id="good_2" name="question_2"
+															class="required" value="Bom"
+															onchange="getVals(this, 'question_2');">
+														<label class="radio smile_4"
+															for="good_2"><span>Bom</span></label>
+													</div>
+												</li>
+												<li>
+													<div class="container_smile_2">
+														<input type="radio" id="very_good_2" name="question_2"
+															class="required" value="Excelente"
+															onchange="getVals(this, 'question_2');">
+														<label class="radio smile_5"
+															for="very_good_2"><span>Excelente</span></label>
 													</div>
 												</li>
 											</ul>
-										</div>
-										<!-- /review_block-->
-										<div class="form-group">
-											<label for="additional_message_2_label">Mensagem adicional: </label>
-											<textarea name="additional_message_2" id="additional_message_2_label"
-												class="form-control" style="height:120px;"
-												onkeyup="getVals(this, 'additional_message_2');"></textarea>
+											<div class="row justify-content-between add_bottom_25">
+												<div class="col-4">
+													<em>Muito Ruim</em>
+												</div>
+												<div class="col-4 text-end">
+													<em>Excelente</em>
+												</div>
+											</div>
 										</div>
 									</div>
-									<!-- /step 2-->
+                  <!-- step 2-->
 
 									<div class="step">
-										<h3 class="main_question"><strong>3 de 5</strong>Como você nos conheceu?</h3>
+										<h3 class="main_question"><strong>3 de 4</strong>Recebi informações sobre:</h3>
 										<div class="review_block">
 											<ul>
 												<li>
 													<div class="checkbox_radio_container">
 														<input type="checkbox" id="question_3_opt_1" name="question_3[]"
-															class="required" value="Google e Sites de Pesquisa"
+															class="required" value="Aplicativo Próprio"
 															onchange="getVals(this, 'question_3');">
 														<label class="checkbox" for="question_3_opt_1"></label>
-														<label for="question_3_opt_1" class="wrapper">Google e Sites de
-															Pesquisa</label>
+														<label for="question_3_opt_1" class="wrapper">Aplicativo Próprio</label>
 													</div>
 												</li>
 												<li>
 													<div class="checkbox_radio_container">
 														<input type="checkbox" id="question_3_opt_2" name="question_3[]"
-															class="required" value="Emails ou Noticiários"
+															class="required" value="Clube de Vantagens Barão"
 															onchange="getVals(this, 'question_3');">
 														<label class="checkbox" for="question_3_opt_2"></label>
-														<label for="question_3_opt_2" class="wrapper">Emails ou
-															Noticiários</label>
+														<label for="question_3_opt_2" class="wrapper">Clube de Vantagens Barão</label>
 													</div>
 												</li>
 												<li>
 													<div class="checkbox_radio_container">
 														<input type="checkbox" id="question_3_opt_3" name="question_3[]"
-															class="required" value="Amigos ou outras pessoas"
+															class="required" value="Cartão Barão"
 															onchange="getVals(this, 'question_3');">
 														<label class="checkbox" for="question_3_opt_3"></label>
-														<label for="question_3_opt_3" class="wrapper">Amigos ou outras
-															pessoas</label>
+														<label for="question_3_opt_3" class="wrapper">Cartão Barão</label>
 													</div>
 												</li>
 												<li>
 													<div class="checkbox_radio_container">
 														<input type="checkbox" id="question_3_opt_4" name="question_3[]"
-															class="required" value="Jornais impressos"
+															class="required" value="Pagamento via Pix"
 															onchange="getVals(this, 'question_3');">
 														<label class="checkbox" for="question_3_opt_4"></label>
-														<label for="question_3_opt_4" class="wrapper">Jornais
-															impressos</label>
+														<label for="question_3_opt_4" class="wrapper">Pagamento via Pix</label>
 													</div>
 												</li>
 												<li>
 													<div class="checkbox_radio_container">
 														<input type="checkbox" id="question_3_opt_5" name="question_3[]"
-															class="required" value="Outros"
+															class="required" value="Não recebi orientações"
 															onchange="getVals(this, 'question_3');">
 														<label class="checkbox" for="question_3_opt_5"></label>
-														<label for="question_3_opt_5" class="wrapper">Outros</label>
+														<label for="question_3_opt_5" class="wrapper">Não recebi orientações</label>
 													</div>
 												</li>
 											</ul>
@@ -270,8 +280,8 @@
 									</div>
 									<!-- /step 3-->
 
-									<div class="step">
-										<h3 class="main_question"><strong>4 de 5</strong>Resumo</h3>
+									<div class="submit step">
+										<h3 class="main_question"><strong>4 de 4</strong>Resumo</h3>
 										<div class="summary">
 											<ul>
 												<li>
@@ -294,54 +304,7 @@
 												</li>
 											</ul>
 										</div>
-									</div>
-									<!-- /step 4-->
-
-									<div class="submit step">
-										<h3 class="main_question"><strong>5 de 5</strong>Nos conte sobre você.
-										</h3>
-										<div class="form-group">
-											<label for="firstname">Nome</label>
-											<input type="text" name="firstname" id="firstname"
-												class="form-control required">
-										</div>
-										<div class="form-group">
-											<label for="lastname">Sobrenome</label>
-											<input type="text" name="lastname" id="lastname"
-												class="form-control required">
-										</div>
-										<div class="form-group">
-											<label for="email">E-mail</label>
-											<input type="email" name="email" id="email" class="form-control required">
-										</div>
-										<div class="form-group">
-											<label for="telephone">Telefone</label>
-											<input type="tel" name="telephone" id="telephone" class="form-control"
-												pattern="\(\d{2}\)\d{4}-\d{4}">
-										</div>
-										<div class="row">
-											<div class="col-lg-3 col-md-3 col-3">
-												<div class="form-group">
-													<label for="age">Idade</label>
-													<input type="number" name="age" id="age" class="form-control">
-												</div>
-											</div>
-											<div class="col-9">
-												<div class="form-group radio_input">
-													<label class="container_radio">Homem
-														<input type="radio" name="gender" value="Male" class="required">
-														<span class="checkmark"></span>
-													</label>
-													<label class="container_radio">Mulher
-														<input type="radio" name="gender" value="Female"
-															class="required">
-														<span class="checkmark"></span>
-													</label>
-												</div>
-											</div>
-										</div>
-										<!-- /row -->
-										<div class="form-group terms">
+                    <div class="form-group terms">
 											<label class="container_check">Por favor, aceite nossos <a href="#"
 													data-bs-toggle="modal" data-bs-target="#terms-txt"
 													style="color:#fff; text-decoration: underline;">Termos e
@@ -351,7 +314,6 @@
 											</label>
 										</div>
 									</div>
-									<!-- /step 5-->
 
 								</div>
 								<!-- /middle-wizard -->
